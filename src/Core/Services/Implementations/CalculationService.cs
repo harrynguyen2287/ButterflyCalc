@@ -1,3 +1,5 @@
+using ButterflyCalc.Core.Common;
+
 namespace ButterflyCalc.Core.Services;
 
 public class CalculationService : ICalculationService
@@ -21,7 +23,7 @@ public class CalculationService : ICalculationService
     {
         if (b == 0)
         {
-            throw new Exception("Cannot divide by zero");
+            throw new Exception(ErrorMessage.CannotDivideByZero);
         }
         return a / b;
     }

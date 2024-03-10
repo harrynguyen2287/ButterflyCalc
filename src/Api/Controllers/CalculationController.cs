@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using ButterflyCalc.Core.Common;
 using ButterflyCalc.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,7 +45,7 @@ public class CalculationController : ControllerBase
   // GET: api/Calculation/divide
   [HttpGet]
   [Route("divide")]
-  public IActionResult Divide(double a, [RegularExpression("(.*[1-9].*)|(.*[.].*[1-9].*)", ErrorMessage = "Cannot divide by zero")] double b)
+  public IActionResult Divide(double a, [RegularExpression("(.*[1-9].*)|(.*[.].*[1-9].*)", ErrorMessage = ErrorMessage.CannotDivideByZero)] double b)
   {
     var res = _calculationService.Divide(a, b);
     return Ok(res);

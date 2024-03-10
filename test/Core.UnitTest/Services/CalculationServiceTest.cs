@@ -1,3 +1,4 @@
+using ButterflyCalc.Core.Common;
 using ButterflyCalc.Core.Services;
 
 namespace ButterflyCalc.Core.UnitTest.Services;
@@ -12,7 +13,7 @@ public class CalculationServiceTest
   }
 
   [Fact]
-  public void Add_should_return_expected_result()
+  public void Add_ReturnExpectedResult()
   {
     // Given
     double a = 5;
@@ -27,7 +28,7 @@ public class CalculationServiceTest
   }
 
   [Fact]
-  public void Subtract_should_return_expected_result()
+  public void Subtract_ReturnExpectedResult()
   {
     // Given
     double a = 5;
@@ -41,7 +42,7 @@ public class CalculationServiceTest
   }
 
   [Fact]
-  public void Multiply_should_return_expected_result()
+  public void Multiply_ReturnExpectedResult()
   {
     // Given
     double a = 5;
@@ -55,7 +56,7 @@ public class CalculationServiceTest
   }
 
   [Fact]
-  public void Divide_should_return_expected_result()
+  public void Divide_ReturnExpectedResult()
   {
     // Given
     double a = 6;
@@ -69,7 +70,7 @@ public class CalculationServiceTest
   }
 
   [Fact]
-  public void Divide_should_return_error_when_divide_by_zero()
+  public void Divide_ShouldReturnError_WhenDividingByZero()
   {
     // Given
     double a = 6;
@@ -80,6 +81,6 @@ public class CalculationServiceTest
 
     // Then
     var result = Assert.Throws<Exception>(act);
-    Assert.Equal("Cannot divide by zero", result.Message);
+    Assert.Equal(ErrorMessage.CannotDivideByZero, result.Message);
   }
 }
