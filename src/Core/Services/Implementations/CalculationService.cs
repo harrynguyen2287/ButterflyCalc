@@ -7,7 +7,7 @@ public class CalculationService : ICalculationService
         return a + b;
     }
 
-    public double Substract(double a, double b)
+    public double Subtract(double a, double b)
     {
         return a - b;
     }
@@ -19,6 +19,10 @@ public class CalculationService : ICalculationService
 
     public double Divide(double a, double b)
     {
+        if (b == 0)
+        {
+            throw new Exception("Cannot divide by zero");
+        }
         return a / b;
     }
 }

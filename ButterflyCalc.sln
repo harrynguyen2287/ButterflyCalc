@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "src\Core\Core.cspro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButterflyCalc.Api", "src\Api\ButterflyCalc.Api.csproj", "{6A983856-CDB5-43E5-8A60-1CAF7E71008F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4DCF7C7E-2CBA-44DC-ABBC-B3DA532BA367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.UnitTest", "test\Api.UnitTest\Api.UnitTest.csproj", "{4FB6B313-A264-4EC5-B5D5-EAA7F1CD4592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.UnitTest", "test\Core.UnitTest\Core.UnitTest.csproj", "{1F71C50D-B463-48FA-B933-BD9668923554}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,14 @@ Global
 		{6A983856-CDB5-43E5-8A60-1CAF7E71008F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A983856-CDB5-43E5-8A60-1CAF7E71008F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A983856-CDB5-43E5-8A60-1CAF7E71008F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB6B313-A264-4EC5-B5D5-EAA7F1CD4592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB6B313-A264-4EC5-B5D5-EAA7F1CD4592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB6B313-A264-4EC5-B5D5-EAA7F1CD4592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB6B313-A264-4EC5-B5D5-EAA7F1CD4592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F71C50D-B463-48FA-B933-BD9668923554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F71C50D-B463-48FA-B933-BD9668923554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F71C50D-B463-48FA-B933-BD9668923554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F71C50D-B463-48FA-B933-BD9668923554}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +51,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{33776B95-DE59-4B31-90CF-4D149AA1CB73} = {4FF053B8-93F7-485F-AAD0-ECC5B5FCCC3D}
 		{6A983856-CDB5-43E5-8A60-1CAF7E71008F} = {4FF053B8-93F7-485F-AAD0-ECC5B5FCCC3D}
+		{4FB6B313-A264-4EC5-B5D5-EAA7F1CD4592} = {4DCF7C7E-2CBA-44DC-ABBC-B3DA532BA367}
+		{1F71C50D-B463-48FA-B933-BD9668923554} = {4DCF7C7E-2CBA-44DC-ABBC-B3DA532BA367}
 	EndGlobalSection
 EndGlobal

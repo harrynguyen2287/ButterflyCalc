@@ -23,12 +23,12 @@ public class CalculationController : ControllerBase
     return Ok(res);
   }
 
-  // GET: api/Calculation/substract
+  // GET: api/Calculation/Subtract
   [HttpGet]
-  [Route("substract")]
-  public IActionResult Substract(double a, double b)
+  [Route("Subtract")]
+  public IActionResult Subtract(double a, double b)
   {
-    var res = _calculationService.Substract(a, b);
+    var res = _calculationService.Subtract(a, b);
     return Ok(res);
   }
 
